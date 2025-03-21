@@ -1,42 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baking with the Gemini API</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Futura Eco Tours</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap Icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
 </head>
 
-<body>
-  <main>
-    <h1>Baking with the Gemini API</h1>
-    <form>
-      <div class="image-picker">
-        <label class="image-choice">
-          <input type="radio" checked name="chosen-image" value="/baked_goods_1.jpg">
-          <img src="/baked_goods_1.jpg">
-        </label>
-        <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
-          <img src="/baked_goods_2.jpg">
-        </label>
-        <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
-          <img src="/baked_goods_3.jpg">
-        </label>
-      </div>
-      <div class="prompt-box">
-        <label>
-          <input name="prompt" placeholder="Enter instructions here" type="text"
-            value="Provide an example recipe for the baked goods in the image">
-        </label>
-        <button type="submit">Go</button>
-      </div>
-    </form>
-    <p class="output">(Results will appear here)</p>
-  </main>
+<body id="page-top">
+  <!-- Navigation  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+    <a href="index.html">
+      <img src="https://i.postimg.cc/LsqqJxK2/futuraecotours1.png" alt="Logo de tu sitio" style="width:90px; ">
+    </a>
+    <a class="navbar-brand" href="index.html" style="padding-right: 5px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link"
+            style="padding-left: 10px; padding-right: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;"
+            href="About.html"><b>Acerca de Nosotros</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            style="padding-left: 10px; padding-right: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;"
+            href="Contact.html"><b>Contacto</b></a>
+        </li>
+      </ul>
 
-  <script type="module" src="/main.js"></script>
+
+      <div class="navbar-nav ms-auto">
+        <ul class="navbar-nav">
+          <img id="login" src="" alt="google-iconlogin3"
+            style="padding-left: 20px; padding-right: 20px; cursor:pointer;">
+          <img id="loginout" src="" alt="cerrar-sesion"
+            style="padding-left: 20px; padding-right: 20px; cursor:pointer;">
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 h-80 pt-5">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+          <h1 style="margin-top: 100px;" class="font-weight-bold">Futura Eco Tours</h1>
+        </div>
+        <div style="margin-top: 15px;" class="col-lg-8 align-self-baseline">
+          <H2 class=""></H2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+  <!-- Footer-->
+  <footer class="text-center text-white" style="margin-top: 90px; background-color: #f1f1f1; ">
+
+
+    <!-- Grid container -->
+    <div>
+      <section style="background-color: rgba(0, 0, 0, 0.2);">
+        <!-- Web App -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark"><i
+            class="fab fa-chrome"></i></a>
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark"><i
+            class="fab fa-facebook-f"></i></a>
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark"><i
+            class="fab fa-twitter"></i></a>
+
+
+        <!-- Youtube -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark"><i
+            class="fab fa-youtube"></i></a>
+
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark"><i
+            class="fab fa-instagram"></i></a>
+      </section>
+
+
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://iglesiasravid.firebaseapp.com/">Futura Eco Tours</a> . Reservados todos los
+      derechos.
+    </div>
+    <!-- Copyright -->
+
+
+  </footer>
+
+
+
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+
+  <!-- Toastify js  <script src="./js/modalfooter.js"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
 </body>
 
 </html>
