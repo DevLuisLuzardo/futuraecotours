@@ -1,0 +1,6 @@
+{
+  "firebase_hosting": {
+    "deploymentHostingUrl": "https://futuraecotours.web.app"
+  },
+  "cloud_run_deploy": {}
+}
